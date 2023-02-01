@@ -181,13 +181,11 @@ export default class DaysGridView extends Component {
 
     // Week rows
     for (let i = 0; i < maxWeekRows; i++) {
-      console.log(moment());
       daysGrid[i] = [];
       // Days in week
       for (let j = 0; j < numDaysInWeek; j++) {
         if (i === 0) {
           // first row: start current month's day on the correct weekday
-          console.log(i, j, startIndex);
           if (j >= startIndex) {
             if (dayOfMonth <= numDaysInMonth) {
               daysGrid[i].push(this.renderDayInCurrentMonth(dayOfMonth++));
