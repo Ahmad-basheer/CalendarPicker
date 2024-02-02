@@ -629,11 +629,11 @@ export default class CalendarPicker extends Component {
         );
     }
 
-    return <View style={styles.wrapper}>{content}</View>;
+    return <View style={compStyles.wrapper}>{content}</View>;
   }
 }
 
-const styles = StyleSheet.create({
+const compStyles = StyleSheet.create({
   wrapper: {
     height: 320,
   },
