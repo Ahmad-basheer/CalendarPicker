@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Dimensions, View } from "react-native";
+import { Dimensions, View, StyleSheet } from "react-native";
 
 import moment from "moment";
 
@@ -629,6 +629,12 @@ export default class CalendarPicker extends Component {
         );
     }
 
-    return content;
+    return <View style={styles.wrapper}>{content}</View>;
   }
 }
+
+const styles = StyleSheet.create({
+  wrapper: {
+    height: 320,
+  },
+});
